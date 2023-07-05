@@ -1,20 +1,36 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator } from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+import Index from "./src/screen/Index"
 
-export default function App() {
+import * as React from 'react'
+
+
+const Stack = createStackNavigator();
+
+const Mystack = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Stack.Navigator initialRouteName='Home'>
+      <Stack.Screen name ="Home" component={Index}
+      options={{ /*Add here the egylire logo 
+      and notification bell 
+      and three stripes menu */}}/>
+
+    </Stack.Navigator>
+  )
+}
+
+function App() {
+
+  return (
+    <NavigationContainer>
+      {Mystack()}
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default () => {
+  return (
+    <App/>
+  )
+}
+
