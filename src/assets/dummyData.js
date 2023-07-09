@@ -204,8 +204,33 @@ export const TOP_DEALS = [
 
 export const TOP_EVENTS = [
   {
-    name: "Upside Down Runway",
-    imageUrl:
-      "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2023-01/Viktor--Rolf-Haute-Couture-4-te-230125-71e538.jpg",
+    name: "Reverse Runway",
+    imageUrl:"https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2023-01/Viktor--Rolf-Haute-Couture-4-te-230125-71e538.jpg",
+    description:"Lorem ipsum dolor sit amet, cons adipiscing elit aho mmangoai choco pillow men eat food",
+    country:"UAE",
+    category:"Fashion",
+    start:"21",
+    end:'23',
+    month:'April'
+  },
+  {
+    name: "Reverse Runway",
+    imageUrl:"https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2023-01/Viktor--Rolf-Haute-Couture-4-te-230125-71e538.jpg",
+    description:"Lorem ipsum dolor sit amet, cons adipiscing elit aho mmangoai choco pillow men eat food",
+    country:"UAE",
+    category:"Fashion",
+    start:"21",
+    end:'23',
+    month:'April'
+  },
+  {
+    name: "Reverse Runway",
+    imageUrl:"https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2023-01/Viktor--Rolf-Haute-Couture-4-te-230125-71e538.jpg",
+    description:"Lorem ipsum dolor sit amet, cons adipiscing elit aho mmangoai choco pillow men eat food",
+    country:"UAE",
+    category:"Fashion",
+    start:"21",
+    end:'23',
+    month:'April'
   }
 ];

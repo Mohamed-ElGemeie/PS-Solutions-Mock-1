@@ -4,29 +4,18 @@ import { Text, StyleSheet } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
 import { TOP_DEALS } from "../../../assets/dummyData"
 import Deal from "./Deal";
-import { AntDesign } from '@expo/vector-icons';
+import ViewAllArrow from "../helpers/ViewAllArrow";
 
 const DealList = () => {
     return (
 
         <View
         style ={style.destinationHolder}>
-
-            <Text style = {style.title}>     
-            Top Deals
-            </Text>
-            <View
-            style= {style.ViewAllHolder}>
-                <Text
-                style= {style.ViewAllText}>
-                    View All
+            <View>
+                <Text style = {style.title}>     
+                Top Deals
                 </Text>
-                <AntDesign
-                    name="arrowright" 
-                    size={16} 
-                    color="black"
-                    style={style.ViewAllLogo}/>
-
+                <ViewAllArrow/>
             </View>
             <FlatList
             horizontal= {true}

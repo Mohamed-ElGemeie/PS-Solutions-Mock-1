@@ -5,20 +5,19 @@ import StripAd from "../comp/Index/StripAd";
 import { ScrollView } from "react-native-gesture-handler";
 import DestinationsList from "../comp/Index/DestinationFeature/DestinationList";
 import DealList from "../comp/Index/DealFeature/DealList";
+import EventList from "../comp/Index/EventFeature/EventList";
 
 const Index = () => {
 
     return (
         <View 
         style={style.scrollBox}>
-            <Text>
-                Home Page
-            </Text>
             <SearchBar/>
             <ScrollView>
                 <StripAd/>
                 <DestinationsList/>
                 <DealList/>
+                <EventList/>
             </ScrollView>
         </View>
     )
