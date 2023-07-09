@@ -5,7 +5,9 @@ import { FlatList } from "react-native-gesture-handler";
 import { DESTINATIONS } from "../../../assets/dummyData"
 import Destination from "./Destination";
 
-const DestinationsList = () => {
+const DestinationsList = ({navigation}) => {
+
+    
     return (
 
         <View
@@ -23,16 +25,20 @@ const DestinationsList = () => {
                 if (index === DESTINATIONS.length-1){
                     return (
                         <Destination
+                        navigation={navigation}
                         InputStyle = {style.lastItem}
                         ImageURL={item.imageUrl}
-                        Name={item.name}/>
+                        Name={item.name}
+                        MoreInfo= {item.MoreInfo}/>
                     )
                 }
                 return(
 
                     <Destination
+                    navigation={navigation}
                     ImageURL={item.imageUrl}
-                    Name={item.name}/>
+                    Name={item.name}
+                    MoreInfo={item.MoreInfo}/>
                 )
             }
             }/>

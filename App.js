@@ -1,29 +1,83 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import Index from "./src/screen/Index"
-
+import IndexHeader from './src/comp/Index/Header/IndexHeader';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Ionicons } from '@expo/vector-icons';
 import * as React from 'react'
-
+import { View, Text, SafeAreaView } from 'react-native';
+import Booking from './src/screen/Booking';
+import BookingHeader from './src/comp/Booking/Header/BookingHeader';
 
 const Stack = createStackNavigator();
 
-const Mystack = () => {
+const HomeStack = () => {
   return (
+
     <Stack.Navigator initialRouteName='Home'>
+
       <Stack.Screen name ="Home" component={Index}
-      options={{ /*Add here the egylire logo 
-      and notification bell 
-      and three stripes menu */}}/>
+      options={{header:IndexHeader}}/>
+      <Stack.Screen name ="Booking" component={Booking}
+      options={{
+        title:null,
+        headerLeft:() => null,
+        header:() =>{return null}}}/>
+      <Stack.Screen name ="BookingHeader" component={BookingHeader}/>
 
     </Stack.Navigator>
   )
 }
 
+const Tab = createBottomTabNavigator();
+
 function App() {
 
   return (
     <NavigationContainer>
-      {Mystack()}
+      <Tab.Navigator initialRouteName = "Home"
+      screenOptions={({ route }) => ({
+          tabBarIcon: ({color}) => {
+
+            if (route.name === 'Home') {
+            
+              return <Ionicons name='home' size={24} color={color} />;
+            } 
+            else if (route.name === 'Book') {
+              return <Ionicons name="book" size={24} color={color} />;
+            } 
+            else if (route.name === 'Services') {
+              return <Ionicons name="apps-sharp" size={24} color={color} />
+            }
+            else if (route.name === 'Profile') {
+              return <Ionicons name="md-person-circle-outline" size={24} color={color} />;
+            }
+
+          },
+          tabBarActiveTintColor: '#d09082',
+          tabBarInactiveTintColor: 'white',
+          tabBarActiveBackgroundColor:"#0a293b",
+          tabBarInactiveBackgroundColor:"#0a293b",
+          tabBarBackground:()=>{return (
+            <View style={{width:"100%",height:"100%",backgroundColor:"#0a293b"}}></View>
+          )},
+          headerShown:false,
+    
+        })}>
+
+        <Tab.Screen name="Home" component={HomeStack}/>
+
+        <Tab.Screen name="Book" component={() =>{
+          return <View><Text>Dummy Page</Text></View>
+        }} />
+
+        <Tab.Screen name="Services" component={() =>{
+          return <View><Text>Dummy Page</Text></View>}} />
+
+        <Tab.Screen name="Profile" component={() =>{
+          return <View><Text>Dummy Page</Text></View>}} />
+
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }

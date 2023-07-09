@@ -4,7 +4,7 @@ import { Text, StyleSheet } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
 import { TOP_DEALS } from "../../../assets/dummyData"
 import Deal from "./Deal";
-import ViewAllArrow from "../helpers/ViewAllArrow";
+import ViewAllArrow from "../../../helpers/ViewAllArrow"
 
 const DealList = () => {
     return (

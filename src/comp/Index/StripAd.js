@@ -1,10 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import { Image,Text, StyleSheet, Dimensions } from "react-native";
+import { Image,Text, StyleSheet } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import { TouchableOpacity } from "react-native-gesture-handler";
-
-const windowWidth = Dimensions.get('window').width;
+import {windowWidth} from "../../../src/helpers/WidthHeight";
 
 const StripAd = () => {
 
@@ -19,7 +18,7 @@ const StripAd = () => {
 
                 <LinearGradient
                     style ={style.gradientRight}
-                    start={{x:0.4,y:0.4}} // 0,5 , 1 for x
+                    start={{x:0.4,y:0.4}}
                     end={{x:0.8,y:0.6}}
                     colors={["rgba(255,255,255,1)","rgba(255,255,255,0.0)"]}>
                 </LinearGradient>

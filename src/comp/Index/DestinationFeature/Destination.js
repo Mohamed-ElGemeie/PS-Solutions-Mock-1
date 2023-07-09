@@ -5,12 +5,14 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 
 const radius = 10
 
-const Destination = ({ImageURL, Name, InputStyle}) => {
+const Destination = ({ImageURL, Name, InputStyle,MoreInfo, navigation}) => {
+
 
 
     return (
         <TouchableOpacity
-        style = {InputStyle ? InputStyle : style.BoxContainer}>
+        style = {InputStyle ? InputStyle : style.BoxContainer}
+        onPress={() => {navigation.navigate("Booking", MoreInfo)}}>
             <View
             style = {style.ParentHolder}>
                 <Image

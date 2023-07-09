@@ -5,7 +5,7 @@ import { FlatList } from "react-native-gesture-handler";
 import { TOP_DEALS } from "../../../assets/dummyData"
 import { TOP_EVENTS } from "../../../assets/dummyData";
 import Event from "./Event"
-import ViewAllArrow from "../helpers/ViewAllArrow";
+import ViewAllArrow from "../../../helpers/ViewAllArrow"
 
 const EventList = () => {
 
