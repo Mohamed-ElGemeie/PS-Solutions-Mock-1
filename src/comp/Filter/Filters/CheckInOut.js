@@ -3,8 +3,9 @@ import { View, Text, StyleSheet } from "react-native";
 import { MaterialIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
-const CheckInOut = () =>{
+const CheckInOut = ({date1, date2}) =>{
 
+    console.log(date1,date2)
     return (
     <View
     style={styles.CheckHolder}>
@@ -28,7 +29,7 @@ const CheckInOut = () =>{
                  borderRadius:15}}>
                 <Text
                 style={{flex:1, paddingLeft:15, fontSize:12, fontWeight:"300"}}>
-                    DATE 1
+                    {date1}
                 </Text>
                 <View
                 style={{marginRight:15}}>
@@ -61,7 +62,7 @@ const CheckInOut = () =>{
                  borderRadius:15}}>
                 <Text
                 style={{flex:1, paddingLeft:15, fontSize:12, fontWeight:"300"}}>
-                    DATE 2
+                    {date2}
                 </Text>
                 <View
                 style={{marginRight:15}}>

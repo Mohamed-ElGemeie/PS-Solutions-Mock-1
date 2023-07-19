@@ -2,7 +2,7 @@ import react, { useState } from "react";
 import { View, Text,TouchableOpacity,StyleSheet, Touchable } from "react-native";
 import { MaterialIcons } from '@expo/vector-icons';
 import { FlatList } from "react-native-gesture-handler";
-
+import CheckInOut from "./CheckInOut";
 
 const Calender = () =>{
 
@@ -10,10 +10,9 @@ const Calender = () =>{
     var cur_month = new Date().getMonth();
     var cur_year = new Date().getFullYear();
 
-    // PROBLEM: can't have default value of the last day of the week
+    // PROBLEM: can't have a default value for the dayincdices as the last day in that month
     const [startdayIndex,startdaySetter] = useState(cur_day);
     const [enddayIndex,enddaySetter] = useState(cur_day+5);
-
     const [monthIndex,monthSetter] = useState(cur_month);
     const [year,yearSetter] = useState(cur_year);
 
@@ -109,7 +108,13 @@ const Calender = () =>{
 
 
 
-    return (    
+    return ( 
+        <View>
+            {/* PROBLEM both the start and end dates have to be in the same month */}
+            <CheckInOut 
+            date1={`${months[monthIndex].name.substring(0, 4)} ${startdayIndex}`} 
+            date2={`${months[monthIndex].name.substring(0, 4)} ${enddayIndex}`}/>
+
         <View
         style = {styles.bg}>
             <View
@@ -180,6 +185,7 @@ const Calender = () =>{
 
             </View> */}
             </View>
+        </View>
         </View>
 
     )

@@ -3,7 +3,6 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-nati
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import FilterPerson from "./FilterPerson";
-import CheckInOut from "./CheckInOut";
 import BigBlackButton from "../../../helpers/BigBlackButton";
 import Calender from "./_Calender";
 
@@ -33,7 +32,6 @@ const DateTimeFilter = ({toggleBottomSheet}) =>{
                  position:'absolute'
                 }
             }></View>
-            <CheckInOut/>
             <Calender/>
 
             <FilterPerson
