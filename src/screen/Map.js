@@ -1,30 +1,21 @@
-import react from "react";
+import React from "react";
 import { View, Text, StyleSheet  } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
 import MapView from 'react-native-maps';
 import { PROVIDER_GOOGLE, Marker } from "react-native-maps";
+import MapHeader from "../comp/Map/MapHeader";
 
-const Location =({CallBack}) =>{
+const Map =({navigation}) =>{
     
     return (
         <View
         style ={styles.parentHolder}>
-            <Text
-            style ={styles.title}>
-                Location
-            </Text>
+            <MapHeader
+            GoBack={()=>{navigation.pop()}}/>
+
             <View
             style ={styles.mapHolder}>
 
                 <MapView
-                zoomEnabled={false}
-                zoomControlEnabled={false}
-                zoomTapEnabled={false}
-                cacheEnabled={false}
-                rotateEnabled={false}
-                scrollDuringRotateOrZoomEnabled={false}
-                scrollEnabled={false}
-                onPress={CallBack}
                 style ={styles.childHolder}
                 provider= {PROVIDER_GOOGLE}
                 initialRegion={{
@@ -55,13 +46,13 @@ const styles = StyleSheet.create({
         marginTop:20
     },
     parentHolder:{
-        marginHorizontal:20
+
     },
     childHolder:{
-        height:180,
+        height:"100%",
         width:"100%",
         borderRadius:20
     }
 
 })
-export default Location;
+export default Map;

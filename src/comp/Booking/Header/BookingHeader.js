@@ -9,6 +9,9 @@ import { Feather } from '@expo/vector-icons';
 
 const BookingHeader = ({ rooms, navigation }) => {
 
+  if (!rooms){
+    return <></>
+  }
 
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -63,7 +66,7 @@ const BookingHeader = ({ rooms, navigation }) => {
 
 const styles = StyleSheet.create({
   Image: {
-    height: 300,
+    height: 250,
     width: "100%",
   },
   paginationContainer: {

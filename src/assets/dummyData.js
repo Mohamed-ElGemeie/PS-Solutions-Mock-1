@@ -24,7 +24,32 @@ export const DESTINATIONS = [
         {url:"https://www.helnan.com/Uploads/HotelImages/595c476f-61c5-4b3b-b223-e2e0741aa99f.jpg"},
         {url:"https://hotelenglishpoint.com/blog/wp-content/uploads/2021/02/epm-scaled.jpg"},
       ],
-
+      Gallery:[
+      {
+        name:"Suites",
+        photos:[
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTxvtYzyGiPndB3Rt_vCHDEVI_pypBdF2uA&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVB5NX5FRwvcqz6voSI0PS-3VtS-4r6SoYg&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluDY6I8yxuk0Nm4ZXNT6qCNIATJzXmuHDeA&usqp=CAU"}
+        ]
+      },
+        {
+          name:"Rooms",
+          photos:[
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEvwJplEvJ8zueflbUI4ivRjWipra4pJxVw&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSOoSiUu6l11LEez78eIRr6dYEojc4cQWu4g&usqp=CAU"}
+      ]
+    },
+      {
+        name:"Restaurants",
+        photos:[
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3TmdP6EjqzIMJ0g9HGJZzIz-4usQcO9PMA&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGo2nOKx-7uip30F1I7SgBmij1hvaLWGtjrQ&usqp=CAU"}
+      ]
+    }
+    ],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       benefits:
@@ -41,9 +66,24 @@ export const DESTINATIONS = [
             "https://img.freepik.com/free-photo/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-isolated_158538-8585.jpg",
           date: "Dec 10, 2022",
           rating: 5,
-          review: "Very nice and comfortable hotel",
-        }
-      
+          review: "Very nice and comfortable hotel. thank you for accompanying my vacation!",
+        },
+        {
+          username: "Jane Doe",
+          userImage:
+            "https://img.freepik.com/free-photo/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-isolated_158538-8585.jpg",
+          date: "Dec 10, 2022",
+          rating: 5,
+          review: "Very nice and comfortable hotel. thank you for accompanying my vacation!",
+        },
+        {
+          username: "Jane Doe",
+          userImage:
+            "https://img.freepik.com/free-photo/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-isolated_158538-8585.jpg",
+          date: "Dec 10, 2022",
+          rating: 5,
+          review: "Very nice and comfortable hotel. thank you for accompanying my vacation!",
+        },
       ]
     },
   },
@@ -67,6 +107,32 @@ export const DESTINATIONS = [
           {url:"https://cf.bstatic.com/xdata/images/hotel/max1024x768/61799283.jpg?k=699143aa33c66e86dee60a8e1e97b3b0621f066d81943a93daef2679d11e3355&o=&hp=1"},
           {url:"https://www.helnan.com/Uploads/HotelImages/595c476f-61c5-4b3b-b223-e2e0741aa99f.jpg"},
           {url:"https://hotelenglishpoint.com/blog/wp-content/uploads/2021/02/epm-scaled.jpg"},
+        ],
+        Gallery:[
+          {
+            name:"suites",
+            photos:[
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTxvtYzyGiPndB3Rt_vCHDEVI_pypBdF2uA&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVB5NX5FRwvcqz6voSI0PS-3VtS-4r6SoYg&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluDY6I8yxuk0Nm4ZXNT6qCNIATJzXmuHDeA&usqp=CAU"}
+            ]
+          },
+            {
+              name:"Rooms",
+              photos:[
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEvwJplEvJ8zueflbUI4ivRjWipra4pJxVw&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSOoSiUu6l11LEez78eIRr6dYEojc4cQWu4g&usqp=CAU"}
+          ]
+        },
+          {
+            name:"restaurants",
+            photos:[
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3TmdP6EjqzIMJ0g9HGJZzIz-4usQcO9PMA&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGo2nOKx-7uip30F1I7SgBmij1hvaLWGtjrQ&usqp=CAU"}
+          ]
+        }
         ],
     name: "Sheraton Miramar",
     logo: "https://1000logos.net/wp-content/uploads/2020/02/Sheraton-Logo-1937.png",
@@ -122,7 +188,32 @@ export const DESTINATIONS = [
         {url:"https://www.helnan.com/Uploads/HotelImages/595c476f-61c5-4b3b-b223-e2e0741aa99f.jpg"},
         {url:"https://hotelenglishpoint.com/blog/wp-content/uploads/2021/02/epm-scaled.jpg"},
       ],
-
+      Gallery:[
+        {
+          name:"suites",
+          photos:[
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTxvtYzyGiPndB3Rt_vCHDEVI_pypBdF2uA&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVB5NX5FRwvcqz6voSI0PS-3VtS-4r6SoYg&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluDY6I8yxuk0Nm4ZXNT6qCNIATJzXmuHDeA&usqp=CAU"}
+          ]
+        },
+          {
+            name:"Rooms",
+            photos:[
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEvwJplEvJ8zueflbUI4ivRjWipra4pJxVw&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSOoSiUu6l11LEez78eIRr6dYEojc4cQWu4g&usqp=CAU"}
+        ]
+      },
+        {
+          name:"restaurants",
+          photos:[
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3TmdP6EjqzIMJ0g9HGJZzIz-4usQcO9PMA&usqp=CAU"},
+          {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGo2nOKx-7uip30F1I7SgBmij1hvaLWGtjrQ&usqp=CAU"}
+        ]
+      }
+      ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
@@ -173,7 +264,32 @@ export const DESTINATIONS = [
           {url:"https://www.helnan.com/Uploads/HotelImages/595c476f-61c5-4b3b-b223-e2e0741aa99f.jpg"},
           {url:"https://hotelenglishpoint.com/blog/wp-content/uploads/2021/02/epm-scaled.jpg"},
         ],
-
+        Gallery:[
+          {
+            name:"Suites",
+            photos:[
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTxvtYzyGiPndB3Rt_vCHDEVI_pypBdF2uA&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVB5NX5FRwvcqz6voSI0PS-3VtS-4r6SoYg&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluDY6I8yxuk0Nm4ZXNT6qCNIATJzXmuHDeA&usqp=CAU"}
+            ]
+          },
+            {
+              name:"Rooms",
+              photos:[
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEvwJplEvJ8zueflbUI4ivRjWipra4pJxVw&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRwC0ecQ9JwL9LzvvxpQr6AA0zxPr-eouD3Q&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSOoSiUu6l11LEez78eIRr6dYEojc4cQWu4g&usqp=CAU"}
+          ]
+        },
+          {
+            name:"Restaurants",
+            photos:[
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3TmdP6EjqzIMJ0g9HGJZzIz-4usQcO9PMA&usqp=CAU"},
+            {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGo2nOKx-7uip30F1I7SgBmij1hvaLWGtjrQ&usqp=CAU"}
+          ]
+        }
+        ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     benefits:

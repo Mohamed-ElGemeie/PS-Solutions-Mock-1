@@ -2,7 +2,7 @@ import React from "react";
 import { Image, FlatList, Text, View , StyleSheet} from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-const HotelPhotosList = ({photos}) =>{
+const HotelPhotosList = ({photos, GoGallery}) =>{
     
     return (
 
@@ -14,7 +14,8 @@ const HotelPhotosList = ({photos}) =>{
                 <Text style = {style.title}>     
                 Hotel Photos
                 </Text>
-                <TouchableOpacity>
+                <TouchableOpacity
+                onPress={GoGallery}>
                     <Text
                     style={style.SeeAllButton}>
                         See All

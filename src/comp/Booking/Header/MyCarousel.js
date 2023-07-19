@@ -1,57 +1,32 @@
-import React, { Component } from 'react';
-import { View } from 'react-native';
-import Carousel, { Pagination } from 'react-native-snap-carousel';
+import Carousel from 'react-native-snap-carousel';
+import { Component } from 'react';
+import React from 'react';
+import { StyleSheet } from 'react-native';
 
-export default class MyCarousel extends Component {
-  constructor(props) {
-    super(props);
+export class MyCarousel extends Component {
 
+    _renderItem = ({item, index}) => {
+        return (
+            <View style={styles.slide}>
+                <Text style={styles.title}>{ item.title }</Text>
+            </View>
+        );
+    }
 
-    this._renderItem = this._renderItem.bind(this);
-    this.pagination = this.pagination.bind(this);
-  }
-
-  _renderItem({ item, index }) {
-    return <MySlideComponent data={item.url} />;
-  }
-
-  pagination() {
-    const { data } = this.props;
-
-    return (
-      <Pagination
-        dotsLength={data.length}
-        containerStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
-        dotStyle={{
-          width: 10,
-          height: 10,
-          borderRadius: 5,
-          marginHorizontal: 8,
-          backgroundColor: 'rgba(255, 255, 255, 0.92)',
-        }}
-        inactiveDotStyle={{
-          // Define styles for inactive dots here
-        }}
-        inactiveDotOpacity={0.4}
-        inactiveDotScale={0.6}
-      />
-    );
-  }
-
-  render() {
-    const { data } = this.props;
-
-    return (
-      <View>
-        <Carousel
-          data={data}
-          renderItem={this._renderItem}
-          windowSize = {100}
-          decelerationRate="fast"
-          scrollInterpolator={scrollTo}
-       />
-        {this.pagination()}
-      </View>
-    );
-  }
+    render () {
+        return (
+            <Carousel
+              ref={(c) => { this._carousel = c; }}
+              data={this.state.entries}
+              renderItem={this._renderItem}
+              sliderWidth={sliderWidth}
+              itemWidth={itemWidth}
+            />
+        );
+    }
 }
+
+const styles = StyleSheet.create({
+    slide:{},
+    title:{}
+})

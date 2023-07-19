@@ -12,7 +12,9 @@ const Destination = ({ImageURL, Name, InputStyle,MoreInfo, navigation}) => {
     return (
         <TouchableOpacity
         style = {InputStyle ? InputStyle : style.BoxContainer}
-        onPress={() => {navigation.navigate("Booking", MoreInfo)}}>
+        onPress={() => {
+            navigation.navigate("Booking", MoreInfo)
+            }}>
             <View
             style = {style.ParentHolder}>
                 <Image

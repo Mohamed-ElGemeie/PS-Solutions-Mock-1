@@ -12,6 +12,7 @@ import { StatusBar } from "expo-status-bar";
 
 const Index = ({navigation}) => {
 
+
     return (
 
         <>
@@ -20,7 +21,8 @@ const Index = ({navigation}) => {
             <ScrollView>
                 <SearchBar/>
                 <StripAd/>
-                <DestinationsList navigation={navigation}/>
+                <DestinationsList 
+                    navigation={navigation}/>
                 <DealList/>
                 <EventList/>
                 <CityGuide/>

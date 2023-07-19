@@ -7,7 +7,7 @@ import Destination from "./Destination";
 
 const DestinationsList = ({navigation}) => {
 
-    
+
     return (
 
         <View
@@ -29,8 +29,9 @@ const DestinationsList = ({navigation}) => {
                         InputStyle = {style.lastItem}
                         ImageURL={item.imageUrl}
                         Name={item.name}
-                        MoreInfo= {item.MoreInfo}/>
-                    )
+                        MoreInfo= {item.MoreInfo}
+                        />
+                        )
                 }
                 return(
 
@@ -38,7 +39,8 @@ const DestinationsList = ({navigation}) => {
                     navigation={navigation}
                     ImageURL={item.imageUrl}
                     Name={item.name}
-                    MoreInfo={item.MoreInfo}/>
+                    MoreInfo={item.MoreInfo}
+                    />
                 )
             }
             }/>

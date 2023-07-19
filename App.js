@@ -8,22 +8,46 @@ import * as React from 'react'
 import { View, Text, SafeAreaView } from 'react-native';
 import Booking from './src/screen/Booking';
 import BookingHeader from './src/comp/Booking/Header/BookingHeader';
+import FilterBooking from './src/screen/FilterBooking';
+import Gallery from './src/screen/Gallery';
+import Map from "./src/screen/Map"
 
 const Stack = createStackNavigator();
 
 const HomeStack = () => {
+
   return (
 
     <Stack.Navigator initialRouteName='Home'>
 
       <Stack.Screen name ="Home" component={Index}
       options={{header:IndexHeader}}/>
+
       <Stack.Screen name ="Booking" component={Booking}
       options={{
         title:null,
         headerLeft:() => null,
-        header:() =>{return null}}}/>
-      <Stack.Screen name ="BookingHeader" component={BookingHeader}/>
+        header:()=>{return null}
+        }}/>
+      <Stack.Screen name ="Filter" component={FilterBooking}
+          options={{
+            title:null,
+            headerLeft:() => null,
+            header:()=>{return null}
+            }}/>
+      <Stack.Screen name ="gallery" component={Gallery}
+          options={{
+            title:null,
+            headerLeft:() => null,
+            header:()=>{return null}
+            }}/>
+
+      <Stack.Screen name ="Map" component={Map}
+          options={{
+            title:null,
+            headerLeft:() => null,
+            header:()=>{return null}
+            }}/>
 
     </Stack.Navigator>
   )
@@ -61,7 +85,7 @@ function App() {
           tabBarBackground:()=>{return (
             <View style={{width:"100%",height:"100%",backgroundColor:"#0a293b"}}></View>
           )},
-          headerShown:false,
+          headerShown:false
     
         })}>
 
